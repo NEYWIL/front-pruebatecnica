@@ -1,0 +1,29 @@
+<h1>Producto</h1>
+<hr>
+<div class="panel-body mt-2">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Proveedor</th>
+    
+            </tr>            
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of data">
+                <td>{{row.descripcion}}</td>
+                <td>{{row.precio | number:'1.2'}}  </td>
+                <td>{{row.cantidad}}</td>
+                <td>{{row.proveedor }}</td>
+    
+    
+            </tr>
+        </tbody>
+
+
+    </table>
+</div>
+
+
